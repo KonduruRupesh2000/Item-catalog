@@ -141,7 +141,7 @@ def gconnect():
     border-radius: 150px; \
     -webkit-border-radius: 150px;-moz-border-radius: 150px;"> '
     flash("You Are Now Logged In As %s" % login_session['username'])
-    print "done!"
+    print("done!")
     return output
 
 
@@ -363,7 +363,7 @@ def newItem():
             name=request.form['category']).one()
         itemImage = request.form['image']
         if itemName != '':
-            print "item name %s" % itemName
+            print("item name %s" % itemName)
             addingItem = Item(name=itemName, description=itemDescription,
                               image=itemImage, category=itemCategory,
                               user_id=itemCategory.user_id)
